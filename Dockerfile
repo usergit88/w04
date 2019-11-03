@@ -13,7 +13,7 @@ LABEL credits="https://github.com/w04"
 #     INSTANCE_NAME='instance'
 
 # Install dependencies
-# RUN yum update -y && yum install -y wget gzip tar
+ RUN yum update -y && yum install -y wget gzip tar
 
 # Install jdk
 # RUN yum install -y java-${JAVA_VERSION}-openjdk-devel && \
