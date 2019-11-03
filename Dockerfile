@@ -29,7 +29,7 @@ ENV USER_NAME='user' \
 ADD tomcat-users.xml /opt/tomcat/conf/
 
 # Expose HTTP and AJP ports
-EXPOSE 8080 8009
+EXPOSE 8081:8080 8009
 
 # Mount external volumes for logs and webapps
 VOLUME ["/opt/tomcat/webapps", "/opt/tomcat/logs"]
